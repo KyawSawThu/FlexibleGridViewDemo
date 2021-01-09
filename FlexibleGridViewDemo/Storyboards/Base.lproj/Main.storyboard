@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1Pu-oD-tQh">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="IndexView" customModule="FlexibleGridViewDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QwO-iG-gIB" customClass="UIFlexibleGridView" customModule="FlexibleGridViewDemo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="QwO-iG-gIB" secondAttribute="bottom" id="DMs-Id-zZI"/>
+                            <constraint firstItem="QwO-iG-gIB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Lnr-rw-L0g"/>
+                            <constraint firstItem="QwO-iG-gIB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="d1x-gZ-0es"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QwO-iG-gIB" secondAttribute="trailing" id="dGr-J4-Iss"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" id="UYa-cn-aQd"/>
+                    <connections>
+                        <outlet property="categoryGridView" destination="QwO-iG-gIB" id="HWS-jF-yPh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1268" y="838"/>
+        </scene>
+        <!--Movie-->
+        <scene sceneID="Wij-35-8E6">
+            <objects>
+                <viewController id="NeH-gx-dfl" customClass="MovieView" customModule="FlexibleGridViewDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AE2-gw-LsM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qA3-bP-eTF" customClass="UIFlexibleGridView" customModule="FlexibleGridViewDemo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ZXO-bT-4hS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qA3-bP-eTF" firstAttribute="top" secondItem="ZXO-bT-4hS" secondAttribute="top" id="RTX-k7-8vS"/>
+                            <constraint firstItem="qA3-bP-eTF" firstAttribute="leading" secondItem="ZXO-bT-4hS" secondAttribute="leading" id="aY1-h0-dB6"/>
+                            <constraint firstItem="ZXO-bT-4hS" firstAttribute="trailing" secondItem="qA3-bP-eTF" secondAttribute="trailing" id="jOL-tT-iJO"/>
+                            <constraint firstItem="ZXO-bT-4hS" firstAttribute="bottom" secondItem="qA3-bP-eTF" secondAttribute="bottom" id="kWB-AY-zID"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Movie" image="circle.grid.2x2.fill" catalog="system" id="8Xb-qq-vcj"/>
+                    <connections>
+                        <outlet property="movieGridView" destination="qA3-bP-eTF" id="A2S-PA-BgF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="351-zf-1b6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-146" y="838"/>
+        </scene>
+        <!--Custom-->
+        <scene sceneID="xPQ-u0-dOM">
+            <objects>
+                <viewController storyboardIdentifier="CustomView" id="cK6-ln-nw2" customClass="CustomView" customModule="FlexibleGridViewDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DbQ-Fx-Rv8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yZq-C6-4Du" customClass="UIFlexibleGridView" customModule="FlexibleGridViewDemo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="13f-9b-csy"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="13f-9b-csy" firstAttribute="bottom" secondItem="yZq-C6-4Du" secondAttribute="bottom" id="CrY-cW-R4w"/>
+                            <constraint firstItem="13f-9b-csy" firstAttribute="trailing" secondItem="yZq-C6-4Du" secondAttribute="trailing" id="E8s-Fw-PX0"/>
+                            <constraint firstItem="yZq-C6-4Du" firstAttribute="top" secondItem="13f-9b-csy" secondAttribute="top" id="EBc-sv-gQJ"/>
+                            <constraint firstItem="yZq-C6-4Du" firstAttribute="leading" secondItem="13f-9b-csy" secondAttribute="leading" id="Kxi-QR-euk"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Custom" image="command" catalog="system" id="Xn3-Ja-r5X"/>
+                    <connections>
+                        <outlet property="customGridView" destination="yZq-C6-4Du" id="1Za-1q-12v"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4zm-vw-JOC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="974" y="838"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Qho-Ui-LqR">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="1Pu-oD-tQh" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="c9v-S9-cAx">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="SFz-Mn-cVC"/>
+                        <segue destination="NeH-gx-dfl" kind="relationship" relationship="viewControllers" id="Ljt-uZ-rRY"/>
+                        <segue destination="cK6-ln-nw2" kind="relationship" relationship="viewControllers" id="J9u-Uy-mhL"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vo0-Xj-9b4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-146.37681159420291" y="75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="circle.grid.2x2.fill" catalog="system" width="128" height="112"/>
+        <image name="command" catalog="system" width="128" height="115"/>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
